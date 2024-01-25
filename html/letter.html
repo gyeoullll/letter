@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+</head>
+<body>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is flurryheart-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "flurryheart";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="https://docs.google.com/document/d/1FJImBaYYHCJQIQAYCGpw_Zphr5GxEoUS0ojBK9wmPBc/edit?usp=sharing";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
